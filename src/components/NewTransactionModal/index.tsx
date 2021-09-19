@@ -42,6 +42,7 @@ export function NewTransactionModal(props: NewTransactionModalProps) {
                 setType("deposit");
               }}
               isActive={type === "deposit"}
+              activeColor="green"
             >
               <img src={income} alt="Entrada" />
               <span>Entrada</span>
@@ -53,6 +54,7 @@ export function NewTransactionModal(props: NewTransactionModalProps) {
                 setType("withdraw");
               }}
               isActive={type === "withdraw"}
+              activeColor="red"
             >
               <img src={outcome} alt="Saída" />
               <span>Saída</span>
